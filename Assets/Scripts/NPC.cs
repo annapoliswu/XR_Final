@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NPC : MonoBehaviour
 {
     public GameObject popUp;
-    public GameObject text;
+    public GameObject textObject;
+
+    private TextMeshProUGUI text;
 
     public GameObject codex;
 
     private static string[] helloResponses = new string[] { "Hello", "Hi" };
-    private static string[] hintResponses = new string[] { "Hello", "Hi" };
+    private static string[] hintResponses = new string[] { "Hint1", "Hint2" };
     Dictionary<string, string[]> responses = new Dictionary<string, string[]>(){
         {"Say hello", helloResponses},
         {"Ask for a hint", hintResponses} 
@@ -23,7 +26,8 @@ public class NPC : MonoBehaviour
     void Start()
     {
         popUp.SetActive(false);
-        text.SetActive(false);
+        textObject.SetActive(false);
+        text = textObject.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -32,7 +36,7 @@ public class NPC : MonoBehaviour
     	if (player.gameObject.tag == "Player")
     	{
             popUp.SetActive(true);
-            text.SetActive(true);
+            textObject.SetActive(true);
     	}
     	
     }
@@ -42,7 +46,7 @@ public class NPC : MonoBehaviour
     	if (player.gameObject.tag == "Player")
     	{
             popUp.SetActive(false);
-            text.SetActive(false);
+            textObject.SetActive(false);
     	}
     	
     }
@@ -53,10 +57,12 @@ public class NPC : MonoBehaviour
             if (OVRInput.GetDown(OVRInput.RawButton.Y)) {
                 int rnd = rand.Next(5);
                 string newText = responses["Say hello"][rnd];
+                text.text = "hello";
             }
             else if (OVRInput.GetDown(OVRInput.RawButton.X)) {
                 int rnd = rand.Next(5);
                 string newText = responses["Ask for a hint"][rnd];
+                text.text = newText;
             }
             else if (OVRInput.GetDown(OVRInput.RawButton.A)) {
                 bool code = codex.activeSelf;
@@ -64,6 +70,7 @@ public class NPC : MonoBehaviour
             }
             else if (OVRInput.GetDown(OVRInput.RawButton.B)) {
                 popUp.SetActive(false);
+                textObject.SetActive(false);
             }
         }
     }

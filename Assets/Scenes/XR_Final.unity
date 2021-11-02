@@ -232,6 +232,7 @@ GameObject:
   - component: {fileID: 48497008}
   - component: {fileID: 48497007}
   - component: {fileID: 48497011}
+  - component: {fileID: 48497012}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -333,8 +334,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1827533393}
-  text: {fileID: 179906401}
+  textObject: {fileID: 179906401}
   codex: {fileID: 576404347}
+--- !u!114 &48497012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48497006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b0b6627f05f4b749ef1f248863013c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1883253754}
 --- !u!1 &122233894
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,7 +579,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sample text
+  m_text: 'Press X to greet
+
+    Press Y to ask for a hint
+
+    Press A to see the
+    codex
+
+    Press B to go back'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2789,6 +2810,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
   m_PrefabInstance: {fileID: 1883253746}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1883253754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+  m_PrefabInstance: {fileID: 1883253746}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883253751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0950df82e7936c84983497630bde5b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2048402295
 GameObject:
   m_ObjectHideFlags: 0
