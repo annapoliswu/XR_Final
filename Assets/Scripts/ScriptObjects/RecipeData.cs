@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CraftingMaterial : MonoBehaviour
+[CreateAssetMenu(fileName = "Recipe", menuName = "Recipe")]
+public class Recipe : ScriptableObject
 {
 
     // Start is called before the first frame update

@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca760d10a870f4832af4a08596b0dc6b, type: 3}
-  m_Name: SoilData
+  m_Script: {fileID: 11500000, guid: ad074644ff568a14187a3690cfbd7534, type: 3}
+  m_Name: ONSPSettings
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  materialType: 0
-  materialDescription: Soily soil aaaa
-  soilType: 1
+  voiceLimit: 64

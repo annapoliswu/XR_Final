@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CraftingMaterial : MonoBehaviour
+public class Element : CraftingMaterial
 {
-
     // Start is called before the first frame update
     void Start()
     {
