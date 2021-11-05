@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Soil : CraftingMaterial
 {
+    public SoilType soilType;
+
     // Start is called before the first frame update
     void Start()
     {

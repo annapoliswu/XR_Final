@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Recipe", menuName = "Recipe")]
-public class Recipe : ScriptableObject
+public class Seed : CraftingMaterial
 {
+    public SeedType seedType;
 
     // Start is called before the first frame update
     void Start()
