@@ -5,6 +5,7 @@ using UnityEngine;
 public class Element : CraftingMaterial
 {
     public ElementType elementType;
+    public string name;
 
     // Start is called before the first frame update
     void Start()
