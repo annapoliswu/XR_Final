@@ -441,7 +441,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8931295101710388769}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.13092375, y: -0.62015224, z: 1.8520212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -510,8 +510,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -582,7 +582,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireFlower (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5205871592204538482, guid: fa223f29b53ab43109c665a55cbc4d3c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa223f29b53ab43109c665a55cbc4d3c, type: 3}
 --- !u!4 &3718984642831351605 stripped
 Transform:
@@ -656,7 +657,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireFlower (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5205871592204538482, guid: fa223f29b53ab43109c665a55cbc4d3c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa223f29b53ab43109c665a55cbc4d3c, type: 3}
 --- !u!4 &8732915654118818523 stripped
 Transform:
@@ -730,7 +732,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireFlower (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5205871592204538482, guid: fa223f29b53ab43109c665a55cbc4d3c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa223f29b53ab43109c665a55cbc4d3c, type: 3}
 --- !u!4 &5185770194795822208 stripped
 Transform:

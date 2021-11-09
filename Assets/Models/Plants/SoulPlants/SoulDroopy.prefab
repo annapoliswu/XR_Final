@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2854706375339536741}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.15747404, y: -0.06328094, z: 0.30702162}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -149,8 +149,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -221,7 +221,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoulPlant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1155383232234060444, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
 --- !u!4 &6686476713658558123 stripped
 Transform:
@@ -295,7 +296,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoulPlant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1155383232234060444, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
 --- !u!4 &4785654268844124587 stripped
 Transform:
@@ -369,7 +371,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoulPlant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1155383232234060444, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
 --- !u!4 &5143177837578978419 stripped
 Transform:
@@ -443,7 +446,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoulPlant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1155383232234060444, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
 --- !u!4 &8763973914056545859 stripped
 Transform:
@@ -517,7 +521,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoulPlant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1155383232234060444, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 753cb48cda4b6491398e9c895094ceb8, type: 3}
 --- !u!4 &643920363966667064 stripped
 Transform:
