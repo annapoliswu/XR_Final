@@ -93,46 +93,44 @@ public class CraftingStation : MonoBehaviour
     //water amount will always be input
     private bool onButtonPressed()
     {
-    
+
         //TODO: actually might be better to move this to craftingManager
         //and have one craft call like, Craft(List<CraftingMaterials> materials .. yeah)
 
-        Element element = null;
-        switch (elements.Count)
+        if (seed != null && soil != null && elements[0] != null)
         {
-            case 0:
-                break;
-            case 1:
-                element = elements[0];
-                break;
-            case 2:
-                // //replace with function to combine elements
-                // element = elements[1];
-                break;
+            Plant plant = craftingManager.getPlant(seed, soil, elements[0]);
+            if (plant != null) //plant recipe exists
+            {
+                Destroy(seed.gameObject);
+                Destroy(soil.gameObject);
+                Destroy(elements[0].gameObject);
+                seed = null;
+                soil = null;
+                elements.Clear();
+
+                outputItem(plant.prefab);
+            }
         }
-
-        if (seed != null && soil != null && element != null)
-        {
-            Plant plant = craftingManager.getPlant(seed, soil, element);
-
-            Destroy(seed.gameObject);
-            Destroy(element.gameObject);
-            Destroy(soil.gameObject);
-
-            sizzle.Play();
-
-            GameObject plantObj = Instantiate(plant.prefab, new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z), Quaternion.identity);
-
-        }
-        else if (element != null)
-        {
-            //return the new element made
-        }
-        else if( plants.Count == 2)
+        else if (elements.Count == 2) 
         {
             Element newElement = craftingManager.getElement(elements[0], elements[1]);
-            sizzle.Play();
-            GameObject elementObj = Instantiate(newElement.prefab, new Vector3(this.transform.position.x , this.transform.position.y + itemDropHeight, this.transform.position.z), Quaternion.identity);
+            if (newElement != null)
+            {
+                outputItem(newElement.prefab);
+
+                Destroy(elements[0].gameObject);
+                Destroy(elements[1].gameObject);
+                elements.Clear();
+            }
+        }
+        else if( plants.Count == 2) 
+        {
+            Element newElement = craftingManager.getElement(plants[0].elementType, plants[1].elementType);
+            if (newElement != null)
+            {
+                outputItem(newElement.prefab);
+            }
         }
         else
         {
@@ -140,6 +138,13 @@ public class CraftingStation : MonoBehaviour
         }
 
         return true;
+    }
+
+
+    private void outputItem(GameObject prefab)
+    {
+        sizzle.Play();
+        GameObject obj = Instantiate(prefab, new Vector3(this.transform.position.x, this.transform.position.y + itemDropHeight, this.transform.position.z), Quaternion.identity);
     }
 
 

@@ -6,20 +6,20 @@ public class CraftingManager : MonoBehaviour
 {
     public List<Plant> plants;
     public List<Element> elements;
-    public Dictionary<HashSet<string>, string> elementDictionary = new Dictionary<HashSet<string>, string>
+    public Dictionary<HashSet<ElementType>, ElementType> elementDictionary = new Dictionary<HashSet<ElementType>, ElementType>
     {
-        { new HashSet<string> { "fire", "water" }, "air"},
-        { new HashSet<string> { "earth", "water" }, "wood"},
-        { new HashSet<string> { "fire", "earth" }, "lava"},
-        { new HashSet<string> { "air", "water" }, "ice"},
-        { new HashSet<string> { "fire", "air" }, "lightning"},
-        { new HashSet<string> { "lava", "air" }, "gem"},
-        { new HashSet<string> { "earth", "gem" }, "metal"},
-        { new HashSet<string> { "metal", "lightning" }, "death"},
-        { new HashSet<string> { "lightning", "air" }, "light"},
-        { new HashSet<string> { "gem", "wood" }, "soul"},
-        { new HashSet<string> { "fire", "death" }, "hellfire"},
-        { new HashSet<string> { "light", "water" }, "holywater"}
+        { new HashSet<ElementType> { ElementType.Fire, ElementType.Water }, ElementType.Air },
+        { new HashSet<ElementType> { ElementType.Earth, ElementType.Water }, ElementType.Wood},
+        { new HashSet<ElementType> { ElementType.Fire , ElementType.Earth }, ElementType.Lava},
+        { new HashSet<ElementType> { ElementType.Air , ElementType.Water },ElementType.Ice },
+        { new HashSet<ElementType> { ElementType.Fire, ElementType.Air }, ElementType.Lightening},
+        { new HashSet<ElementType> { ElementType.Lava, ElementType.Air }, ElementType.Gem},
+        { new HashSet<ElementType> { ElementType.Earth, ElementType.Gem }, ElementType.Metal},
+        { new HashSet<ElementType> { ElementType.Metal, ElementType.Lightening}, ElementType.Death},
+        { new HashSet<ElementType> { ElementType.Lightening,ElementType.Air }, ElementType.Light},
+        { new HashSet<ElementType> { ElementType.Gem, ElementType.Wood }, ElementType.Soul},
+        { new HashSet<ElementType> { ElementType.Fire, ElementType.Death }, ElementType.Hellfire},
+        { new HashSet<ElementType> { ElementType.Light, ElementType.Water }, ElementType.HolyWater}
     };
 
     public Plant getPlant(Seed seed, Soil soil, Element element)
@@ -37,26 +37,42 @@ public class CraftingManager : MonoBehaviour
         return null;
     }
 
-    public Element getElement(Element elementOne, Element elementTwo) 
+
+   
+
+
+    //takes element types and searches dictionary for what type they combine into
+    //returns element prefab of that type
+    public Element getElement(ElementType elementOne, ElementType elementTwo)
     {
-        HashSet<string> elementHash = new HashSet<string> { elementOne.name, elementTwo.name };
-        string newElementName;
-        if (elementDictionary.TryGetValue(elementHash, out newElementName)){}
-        else 
+        HashSet<ElementType> elementHash = new HashSet<ElementType> { elementOne, elementTwo };
+        ElementType newElementType;
+        if (elementDictionary.TryGetValue(elementHash, out newElementType))
         {
-            newElementName = elementOne.name;
+
+        }
+        else
+        {
+            newElementType = elementOne;
         }
 
-        foreach(Element element in elements)
+        foreach (Element element in elements)
         {
-            if(element.name == newElementName)
+            if (element.elementType == newElementType)
             {
                 return element;
             }
         }
 
-        return elementOne;
+        return null;
 
-        
+    }
+
+
+    //same thing but with element inputs
+    public Element getElement(Element elementOne, Element elementTwo)
+    {
+        return getElement(elementOne.elementType, elementTwo.elementType);
+
     }
 }

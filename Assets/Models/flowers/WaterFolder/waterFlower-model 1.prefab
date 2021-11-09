@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 6796964793721420771}
   - component: {fileID: 2324149844127293126}
   - component: {fileID: 6653866002990542962}
-  - component: {fileID: 6430902478273700347}
   - component: {fileID: 2451703900166247963}
+  - component: {fileID: 1717058665928258804}
   m_Layer: 0
   m_Name: waterFlower-model 1
   m_TagString: Untagged
@@ -175,19 +175,6 @@ MonoBehaviour:
   prefab: {fileID: 8441460031465638589}
   elementType: 1
   name: water
---- !u!135 &6430902478273700347
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8441460031465638589}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.027297307
-  m_Center: {x: -0.004318338, y: 0, z: -5.668939e-11}
 --- !u!54 &2451703900166247963
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -204,6 +191,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1717058665928258804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8441460031465638589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.04, z: 0.03}
+  m_Center: {x: -0.004318338, y: 0, z: -5.668939e-11}
 --- !u!1001 &3120611008179546432
 PrefabInstance:
   m_ObjectHideFlags: 0
