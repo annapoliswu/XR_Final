@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 863900244475294000}
   - component: {fileID: 5337011460172564447}
   - component: {fileID: 3277224447876591567}
-  - component: {fileID: 7950771604479192162}
   - component: {fileID: 2500534151205256917}
   m_Layer: 0
   m_Name: LightLong
@@ -72,22 +71,6 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
---- !u!54 &7950771604479192162
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51474862595828618}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &2500534151205256917
 BoxCollider:
   m_ObjectHideFlags: 0

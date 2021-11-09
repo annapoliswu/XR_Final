@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2150425171870112044}
   - component: {fileID: 4193747376792448486}
   - component: {fileID: 5834513331011340533}
-  - component: {fileID: 8825612983146325803}
   - component: {fileID: 6153453583115904724}
   - component: {fileID: 6620483240626209320}
   m_Layer: 0
@@ -108,22 +107,6 @@ MonoBehaviour:
   elementType: 7
   soilType: 0
   waterAmount: 0
---- !u!54 &8825612983146325803
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2392488327499418675}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6153453583115904724
 MonoBehaviour:
   m_ObjectHideFlags: 0
