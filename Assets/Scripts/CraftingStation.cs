@@ -22,11 +22,12 @@ public class CraftingStation : MonoBehaviour
 
     [Header("Misc")]
     public float itemDropHeight = .5f;
+    public ParticleSystem sizzle;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        sizzle.Pause();
     }
 
     // Update is called once per frame
@@ -46,19 +47,19 @@ public class CraftingStation : MonoBehaviour
         {
             elements.Add(tempElement);
             print("got element");
-            tempElement.transform.position = new Vector3(this.transform.position.x , this.transform.position.y + itemDropHeight, this.transform.position.z);
+            tempElement.transform.position = new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z);
         }
         else if (tempSoil != null && soil == null)
         {
             soil = tempSoil;
             print("got soil");
-            soil.transform.position = new Vector3(this.transform.position.x , this.transform.position.y + itemDropHeight, this.transform.position.z);
+            soil.transform.position = new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z);
         }
         else if( tempSeed != null && seed == null)
         {
             seed = tempSeed;
             print("got seed");
-            seed.transform.position = new Vector3(this.transform.position.x , this.transform.position.y + itemDropHeight, this.transform.position.z);
+            seed.transform.position = new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z);
         }
 
     }
@@ -118,6 +119,8 @@ public class CraftingStation : MonoBehaviour
             Destroy(element.gameObject);
             Destroy(soil.gameObject);
 
+            sizzle.Play();
+
             GameObject plantObj = Instantiate(plant.prefab, new Vector3(this.transform.position.x , this.transform.position.y + itemDropHeight, this.transform.position.z), Quaternion.identity);
 
         }
@@ -128,6 +131,7 @@ public class CraftingStation : MonoBehaviour
         else if( plants.Count == 2)
         {
             Element newElement = craftingManager.getElement(elements[0], elements[1]);
+            sizzle.Play();
             GameObject elementObj = Instantiate(newElement.prefab, new Vector3(this.transform.position.x , this.transform.position.y + itemDropHeight, this.transform.position.z), Quaternion.identity);
         }
         else
