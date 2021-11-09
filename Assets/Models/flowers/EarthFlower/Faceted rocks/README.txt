@@ -1,0 +1,1 @@
+This pack contains 5 unique rocks and 4 materials, with 4K maps (spec, normal, albedo and occlusion). All models are lowpoly (156-350 tris), and were created using Zbrush , 3Ds Max, Photoshop and XNormal. Each rock has collision, all textures in TGA.
