@@ -121,7 +121,7 @@ public class CraftingStation : MonoBehaviour
 
             sizzle.Play();
 
-            GameObject plantObj = Instantiate(plant.prefab, new Vector3(this.transform.position.x , this.transform.position.y + itemDropHeight, this.transform.position.z), Quaternion.identity);
+            GameObject plantObj = Instantiate(plant.prefab, new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z), Quaternion.identity);
 
         }
         else if (element != null)

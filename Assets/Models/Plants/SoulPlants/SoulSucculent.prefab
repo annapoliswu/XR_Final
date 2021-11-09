@@ -3340,6 +3340,7 @@ GameObject:
   - component: {fileID: 277892700760051893}
   - component: {fileID: 54142808522838115}
   - component: {fileID: 3586295564041595455}
+  - component: {fileID: 912155574074480608}
   m_Layer: 0
   m_Name: SoulSucculent
   m_TagString: Untagged
@@ -3412,6 +3413,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9004268, y: 0.702489, z: 0.82572126}
   m_Center: {x: -0.024891049, y: 0.07437724, z: 0.08713937}
+--- !u!54 &912155574074480608
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8841909253150258352}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9107107011558777149
 GameObject:
   m_ObjectHideFlags: 0
