@@ -17,6 +17,12 @@ public class CraftingStation : MonoBehaviour
     public List<Plant> plants;
     public int waterAmount = 0;
 
+    [Header("Crafting Materials")]
+    public GameObject gravelLocation;
+    public GameObject sandLocation;
+    public GameObject dirtLocation;
+    public GameObject seedLocation;
+
     [Header("recipes / some lookup reference here probably")]
     public CraftingManager craftingManager;
 
@@ -62,6 +68,8 @@ public class CraftingStation : MonoBehaviour
             seed.transform.position = new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z);
         }
 
+        // other.gameObject.GetComponent<OVRGrabbable>().isGrabbed() = false;
+
     }
 
 
@@ -102,6 +110,21 @@ public class CraftingStation : MonoBehaviour
             Plant plant = craftingManager.getPlant(seed, soil, elements[0]);
             if (plant != null) //plant recipe exists
             {
+                if (soil.soilType == SoilType.Gravel)
+                {
+                    GameObject newGravel = Instantiate(soil.prefab, new Vector3(gravelLocation.transform.position.x, gravelLocation.transform.position.y, gravelLocation.transform.position.z), Quaternion.identity);
+                }
+                else if (soil.soilType == SoilType.Sand)
+                {
+                    GameObject newSand = Instantiate(soil.prefab, new Vector3(sandLocation.transform.position.x, sandLocation.transform.position.y, sandLocation.transform.position.z), Quaternion.identity);
+                }
+                else if (soil.soilType == SoilType.Dirt)
+                {
+                    GameObject newDirt = Instantiate(soil.prefab, new Vector3(dirtLocation.transform.position.x, dirtLocation.transform.position.y, dirtLocation.transform.position.z), Quaternion.identity);
+                }
+                
+                GameObject newSeed = Instantiate(seed.prefab, new Vector3(seedLocation.transform.position.x, seedLocation.transform.position.y, seedLocation.transform.position.z), Quaternion.identity);
+
                 Destroy(seed.gameObject);
                 Destroy(soil.gameObject);
                 Destroy(elements[0].gameObject);
@@ -112,7 +135,7 @@ public class CraftingStation : MonoBehaviour
                 outputItem(plant.prefab);
             }
         }
-        else if (elements.Count == 2) 
+        else if (elements.Count == 2 && plants.Count == 0) 
         {
             Element newElement = craftingManager.getElement(elements[0], elements[1]);
             if (newElement != null)

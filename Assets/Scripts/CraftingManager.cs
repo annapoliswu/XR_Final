@@ -19,7 +19,8 @@ public class CraftingManager : MonoBehaviour
         { new HashSet<ElementType> { ElementType.Lightening,ElementType.Air }, ElementType.Light},
         { new HashSet<ElementType> { ElementType.Gem, ElementType.Wood }, ElementType.Soul},
         { new HashSet<ElementType> { ElementType.Fire, ElementType.Death }, ElementType.Hellfire},
-        { new HashSet<ElementType> { ElementType.Light, ElementType.Water }, ElementType.HolyWater}
+        { new HashSet<ElementType> { ElementType.Light, ElementType.Water }, ElementType.HolyWater},
+        { new HashSet<ElementType> { ElementType.Earth, ElementType.Soul }, ElementType.MotherEarth}
     };
 
     public Plant getPlant(Seed seed, Soil soil, Element element)
