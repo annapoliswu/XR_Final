@@ -1230,6 +1230,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1756478645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029385831220282236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e331062be1af74099ae96d3840bcfa37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animation: fireFlower
+  startSpeed: 1
+  endSpeed: 2
 --- !u!1 &2801232626719511432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3586,5 +3601,10 @@ PrefabInstance:
 --- !u!4 &2029385831220282237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3264909465614823464, guid: fa223f29b53ab43109c665a55cbc4d3c, type: 3}
+  m_PrefabInstance: {fileID: 3559702383184360277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2029385831220282236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3264909465614823465, guid: fa223f29b53ab43109c665a55cbc4d3c, type: 3}
   m_PrefabInstance: {fileID: 3559702383184360277}
   m_PrefabAsset: {fileID: 0}
