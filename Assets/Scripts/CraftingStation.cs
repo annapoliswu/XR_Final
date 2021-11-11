@@ -47,6 +47,7 @@ public class CraftingStation : MonoBehaviour
         Seed tempSeed = other.gameObject.GetComponent<Seed>();
         Element tempElement = other.gameObject.GetComponent<Element>();
         Soil tempSoil = other.gameObject.GetComponent<Soil>();
+        Plant tempPlant = other.gameObject.GetComponent<Plant>();
 
 
         if (tempElement != null && elements.Count < 2)
@@ -67,6 +68,11 @@ public class CraftingStation : MonoBehaviour
             print("got seed");
             seed.transform.position = new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z);
         }
+        else if (tempPlant != null && plants.Count < 2)
+        {
+            plants.Add(tempPlant);
+            print("got plant");
+        }
 
         // other.gameObject.GetComponent<OVRGrabbable>().isGrabbed() = false;
 
@@ -78,6 +84,7 @@ public class CraftingStation : MonoBehaviour
         Seed tempSeed = other.gameObject.GetComponent<Seed>();
         Element tempElement = other.gameObject.GetComponent<Element>();
         Soil tempSoil = other.gameObject.GetComponent<Soil>();
+        Plant tempPlant = other.gameObject.GetComponent<Plant>();
 
         if (elements.Contains(tempElement) )
         {
@@ -94,6 +101,11 @@ public class CraftingStation : MonoBehaviour
             seed = null;
             print("removed seed");
         }
+        else if ( plants.Contains(tempPlant) )
+        {
+            plants.Remove(tempPlant);
+            print("removed plant");
+        }
     }
 
 
@@ -102,10 +114,8 @@ public class CraftingStation : MonoBehaviour
     private bool onButtonPressed()
     {
 
-        //TODO: actually might be better to move this to craftingManager
-        //and have one craft call like, Craft(List<CraftingMaterials> materials .. yeah)
 
-        if (seed != null && soil != null && elements[0] != null)
+        if (seed != null && soil != null && (elements.Count == 1 && elements[0] != null) )
         {
             Plant plant = craftingManager.getPlant(seed, soil, elements[0]);
             if (plant != null) //plant recipe exists
