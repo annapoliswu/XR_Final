@@ -100,7 +100,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: beda3e4fa246046fbb079a20491e70d1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -137,7 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 3152337491165404417}
   elementType: 9
-  name: metal
 --- !u!135 &8242831183507544464
 SphereCollider:
   m_ObjectHideFlags: 0

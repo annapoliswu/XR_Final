@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 3154599905296208117}
   - component: {fileID: 7446941378640995913}
   - component: {fileID: 919132148233076621}
+  - component: {fileID: 5993192733968033022}
   m_Layer: 0
   m_Name: natureFlower
   m_TagString: Untagged
@@ -351,6 +352,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.025702352, y: 0.012633955, z: 0.04}
   m_Center: {x: -0.000981964, y: 0.000018276916, z: 0}
+--- !u!114 &5993192733968033022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345446640407087695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e331062be1af74099ae96d3840bcfa37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animation: Bloom
+  startSpeed: 1
+  endSpeed: 1
 --- !u!1 &2784862351608264526
 GameObject:
   m_ObjectHideFlags: 0
