@@ -125,6 +125,8 @@ GameObject:
   - component: {fileID: 6890172116594662091}
   - component: {fileID: 3402218353339734816}
   - component: {fileID: 2499125280284082448}
+  - component: {fileID: 692247414408573410}
+  - component: {fileID: 1637511774722937675}
   m_Layer: 0
   m_Name: SandHellFire
   m_TagString: Untagged
@@ -139,7 +141,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6937841571537140190}
-  m_LocalRotation: {x: -0, y: -0.055297613, z: -0, w: 0.99846995}
+  m_LocalRotation: {x: 0, y: -0.055298638, z: 0, w: 0.99846995}
   m_LocalPosition: {x: -0.826, y: -0.034, z: -0.898}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -177,6 +179,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1415555, z: 1}
   m_Center: {x: 0, y: 0.3985157, z: 0}
+--- !u!114 &692247414408573410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6937841571537140190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600dc0eb45ce74207ae322ed48c466ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  seedType: 0
+  elementType: 13
+  soilType: 1
+  waterAmount: 0
+--- !u!114 &1637511774722937675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6937841571537140190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &8892367984312577723
 GameObject:
   m_ObjectHideFlags: 0

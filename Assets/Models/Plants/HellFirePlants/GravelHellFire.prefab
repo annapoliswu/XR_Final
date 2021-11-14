@@ -125,6 +125,8 @@ GameObject:
   - component: {fileID: 8808963827523030531}
   - component: {fileID: 762917532524515304}
   - component: {fileID: 508866998250477016}
+  - component: {fileID: 5083529149991091374}
+  - component: {fileID: 9073422629521517351}
   m_Layer: 0
   m_Name: GravelHellFire
   m_TagString: Untagged
@@ -139,7 +141,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5037659652981206294}
-  m_LocalRotation: {x: -0, y: 0.101416185, z: -0, w: 0.9948441}
+  m_LocalRotation: {x: 0, y: 0.10141227, z: 0, w: 0.99484456}
   m_LocalPosition: {x: 0.489, y: -0.034, z: -0.126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -177,6 +179,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1415555, z: 1}
   m_Center: {x: 0, y: 0.3985157, z: 0}
+--- !u!114 &5083529149991091374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5037659652981206294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600dc0eb45ce74207ae322ed48c466ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  seedType: 0
+  elementType: 13
+  soilType: 0
+  waterAmount: 0
+--- !u!114 &9073422629521517351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5037659652981206294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &6830130447371631219
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4310133507550990631}
   - component: {fileID: 5438517727593091276}
   - component: {fileID: 5107303724761533180}
+  - component: {fileID: 6379499300381894119}
+  - component: {fileID: 4287580883415265808}
   m_Layer: 0
   m_Name: DirtHellFire
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290005781104849458}
-  m_LocalRotation: {x: -0, y: -0.17343783, z: -0, w: 0.98484486}
+  m_LocalRotation: {x: 0, y: -0.17344192, z: 0, w: 0.9848441}
   m_LocalPosition: {x: -2.364, y: -0.034, z: -1.263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -33,7 +35,7 @@ Transform:
   - {fileID: 602075479713303357}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -19.976, z: 0}
 --- !u!54 &5438517727593091276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63,6 +65,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1415555, z: 1}
   m_Center: {x: 0, y: 0.3985157, z: 0}
+--- !u!114 &6379499300381894119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290005781104849458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600dc0eb45ce74207ae322ed48c466ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 290005781104849458}
+  seedType: 0
+  elementType: 13
+  soilType: 2
+  waterAmount: 0
+--- !u!114 &4287580883415265808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290005781104849458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!1 &2244601377159980375
 GameObject:
   m_ObjectHideFlags: 0
