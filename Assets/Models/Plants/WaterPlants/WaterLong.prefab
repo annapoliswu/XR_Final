@@ -29569,6 +29569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6850345671059070790}
   - component: {fileID: 7451778922344312323}
+  - component: {fileID: 4079878797773435671}
   m_Layer: 0
   m_Name: WaterLong
   m_TagString: Untagged
@@ -29588,6 +29589,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2735888029444119368}
+  - {fileID: 4205159053834452166}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29608,6 +29610,19 @@ MonoBehaviour:
   elementType: 1
   soilType: 2
   waterAmount: 0
+--- !u!65 &4079878797773435671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738213719107608642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.1573813, z: 0.96030426}
+  m_Center: {x: 0, y: 0.39509392, z: -0.037594795}
 --- !u!1 &8802119261033320527
 GameObject:
   m_ObjectHideFlags: 0
@@ -29619,7 +29634,6 @@ GameObject:
   - component: {fileID: 4076166692970462527}
   - component: {fileID: 5859979772606603537}
   - component: {fileID: 6005048836708739712}
-  - component: {fileID: 1789415849224957446}
   m_Layer: 0
   m_Name: waterFlower-model (1)
   m_TagString: Untagged
@@ -29681,19 +29695,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8802119261033320527}
   elementType: 1
---- !u!65 &1789415849224957446
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8802119261033320527}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.04, z: 0.03}
-  m_Center: {x: -0.004318338, y: 0, z: -5.668939e-11}
 --- !u!1 &8802119261138975344
 GameObject:
   m_ObjectHideFlags: 0
@@ -29705,7 +29706,6 @@ GameObject:
   - component: {fileID: 4076166692999550720}
   - component: {fileID: 5859979772712241966}
   - component: {fileID: 6005048836738351295}
-  - component: {fileID: 1789415849330590777}
   m_Layer: 0
   m_Name: waterFlower-model (2)
   m_TagString: Untagged
@@ -29767,19 +29767,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8802119261138975344}
   elementType: 1
---- !u!65 &1789415849330590777
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8802119261138975344}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.04, z: 0.03}
-  m_Center: {x: -0.004318338, y: 0, z: -5.668939e-11}
 --- !u!1 &8802119262828300722
 GameObject:
   m_ObjectHideFlags: 0
@@ -29791,7 +29778,6 @@ GameObject:
   - component: {fileID: 4076166692517618882}
   - component: {fileID: 5859979772220815596}
   - component: {fileID: 6005048836289426301}
-  - component: {fileID: 1789415847798978555}
   m_Layer: 0
   m_Name: waterFlower-model (3)
   m_TagString: Untagged
@@ -29853,16 +29839,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8802119262828300722}
   elementType: 1
---- !u!65 &1789415847798978555
-BoxCollider:
+--- !u!1001 &6388176420424713431
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8802119262828300722}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.04, z: 0.03}
-  m_Center: {x: -0.004318338, y: 0, z: -5.668939e-11}
+  m_Modification:
+    m_TransformParent: {fileID: 6850345671059070790}
+    m_Modifications:
+    - target: {fileID: 7132828224515536913, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132828224515536913, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132828224515536913, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.102
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132828224515536913, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132828224515536913, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132828224515536913, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132828224515536913, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+--- !u!4 &4205159053834452166 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7132828224515536913, guid: f6a111a262c5744b5b5371d963617074, type: 3}
+  m_PrefabInstance: {fileID: 6388176420424713431}
+  m_PrefabAsset: {fileID: 0}

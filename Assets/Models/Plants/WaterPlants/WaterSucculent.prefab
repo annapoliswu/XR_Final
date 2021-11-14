@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 93940443499368465}
   - component: {fileID: -8275672486204637511}
+  - component: {fileID: 1092652273858950576}
   m_Layer: 0
   m_Name: WaterSucculent
   m_TagString: Untagged
@@ -30,6 +31,7 @@ Transform:
   m_Children:
   - {fileID: 8189352647823249509}
   - {fileID: 488366957085158540}
+  - {fileID: 2365923793582611654}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50,6 +52,19 @@ MonoBehaviour:
   elementType: 1
   soilType: 1
   waterAmount: 0
+--- !u!65 &1092652273858950576
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93940443499368466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8698355, y: 0.9814131, z: 0.82320213}
+  m_Center: {x: -0.06508225, y: 0.009293437, z: -0.0790391}
 --- !u!1 &413919300836149631
 GameObject:
   m_ObjectHideFlags: 0
@@ -10798,7 +10813,6 @@ GameObject:
   - component: {fileID: 8189352647823249509}
   - component: {fileID: 1758035893308902475}
   - component: {fileID: 1900836539764901850}
-  - component: {fileID: 5900367389821846364}
   m_Layer: 0
   m_Name: waterFlower-model
   m_TagString: Untagged
@@ -10860,19 +10874,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 3679564108688227605}
   elementType: 1
---- !u!65 &5900367389821846364
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3679564108688227605}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.04, z: 0.03}
-  m_Center: {x: -0.004318338, y: 0, z: -5.668939e-11}
 --- !u!1 &3778173022020613918
 GameObject:
   m_ObjectHideFlags: 0
@@ -13293,3 +13294,45 @@ Transform:
   m_Father: {fileID: 488366957085158540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8034409856132265948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 93940443499368465}
+    m_Modifications:
+    - target: {fileID: 5740548102415969050, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740548102415969050, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.069
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740548102415969050, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740548102415969050, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740548102415969050, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740548102415969050, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740548102415969050, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+--- !u!4 &2365923793582611654 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5740548102415969050, guid: 7b91e3b542b75417280b6efc12150763, type: 3}
+  m_PrefabInstance: {fileID: 8034409856132265948}
+  m_PrefabAsset: {fileID: 0}
