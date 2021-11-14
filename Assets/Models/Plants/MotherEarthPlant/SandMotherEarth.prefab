@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4401063649693695098}
   - component: {fileID: 5600908433330830737}
   - component: {fileID: 4621777512501176225}
+  - component: {fileID: -4923332443693635080}
   m_Layer: 0
   m_Name: SandMotherEarth
   m_TagString: Untagged
@@ -63,6 +64,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1415555, z: 1}
   m_Center: {x: 0, y: 0.3985157, z: 0}
+--- !u!114 &-4923332443693635080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199668271579258735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600dc0eb45ce74207ae322ed48c466ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 199668271579258735}
+  seedType: 0
+  elementType: 15
+  soilType: 1
+  waterAmount: 0
 --- !u!1 &1866036760342726666
 GameObject:
   m_ObjectHideFlags: 0

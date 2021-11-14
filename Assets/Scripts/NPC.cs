@@ -12,12 +12,11 @@ public class NPC : MonoBehaviour
 
     public GameObject codex;
 
-    private static string[] helloResponses = new string[] { "Hello", "Hi", "Hey" };
-    private static string[] hintResponses = new string[] { "Hint1", "Hint2", "Hint3" };
+    private static string[] helloResponses = new string[] { "Hello, welcome to my greenhouse", "Welcome, happy crafting", "Careful traveller, element breeding is a dangerous pursuit" };
+    private static string[] hintResponses = new string[] { "Try and combine elements with different soil types", "Try and breed two plants or elements together to generate a new element", "Not all combinations work", "Try to create the three top tier plants: Mother Earth, Hell Fire, and Holy Water" };
     Dictionary<string, string[]> responses = new Dictionary<string, string[]>(){
         {"Say hello", helloResponses},
         {"Ask for a hint", hintResponses} 
-
     };
 
     System.Random rand = new System.Random();
@@ -75,7 +74,7 @@ public class NPC : MonoBehaviour
                 bool active = popUp.activeSelf;
                 popUp.SetActive(true);
                 textObject.SetActive(true);
-                text.text = "Press X to greet\nPress Y to ask for a hint\nPress A to see the codex\nPress B to go back";
+                text.text = "Press Y to greet\nPress X to ask for a hint\nPress A to see the codex\nPress B to go back";
             }
         }
     }

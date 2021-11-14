@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2271755803142428487}
   seedType: 0
-  elementType: 10
+  elementType: 9
   soilType: 0
   waterAmount: 0
 --- !u!114 &8055761784553768691

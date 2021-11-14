@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 6466609751627521821}
   - component: {fileID: 4870269541436153405}
   - component: {fileID: 5896102766195961510}
+  - component: {fileID: 493727750693868999}
   m_Layer: 0
   m_Name: GravelMotherEarth
   m_TagString: Untagged
@@ -177,6 +178,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &493727750693868999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379401293117291528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600dc0eb45ce74207ae322ed48c466ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7379401293117291528}
+  seedType: 0
+  elementType: 15
+  soilType: 0
+  waterAmount: 0
 --- !u!1 &9027682980628867949
 GameObject:
   m_ObjectHideFlags: 0

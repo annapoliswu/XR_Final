@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum SeedType { Basic } //here if we want to add other seeds in future
 public enum SoilType { Gravel, Sand, Dirt }
-public enum ElementType { Fire, Water, Earth, Lava, Air, Wood, Ice, Lightening, Gem, Metal, Soul, Death, Light, Hellfire, HolyWater, MotherEarth }
+public enum ElementType { Fire, Water, Earth, Lava, Air, Nature, Ice, Lightening, Gem, Metal, Soul, Death, Light, Hellfire, HolyWater, MotherEarth }
 
 public abstract class CraftingMaterial : MonoBehaviour
 {

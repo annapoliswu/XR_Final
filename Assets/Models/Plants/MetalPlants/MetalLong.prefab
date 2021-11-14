@@ -867,6 +867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8927802648999021894}
+  - component: {fileID: 1519028808561686351}
   m_Layer: 0
   m_Name: MetalLong
   m_TagString: Untagged
@@ -889,3 +890,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1519028808561686351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912038441703584353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600dc0eb45ce74207ae322ed48c466ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1912038441703584353}
+  seedType: 0
+  elementType: 9
+  soilType: 2
+  waterAmount: 0

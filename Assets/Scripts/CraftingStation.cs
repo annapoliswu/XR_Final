@@ -54,13 +54,13 @@ public class CraftingStation : MonoBehaviour
         {
             elements.Add(tempElement);
             print("got element");
-            tempElement.transform.position = new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z);
+            tempElement.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
         }
         else if (tempSoil != null && soil == null)
         {
             soil = tempSoil;
             print("got soil");
-            soil.transform.position = new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z);
+            soil.transform.position = new Vector3(this.transform.position.x , soil.transform.position.y, this.transform.position.z);
         }
         else if( tempSeed != null && seed == null)
         {
@@ -157,7 +157,7 @@ public class CraftingStation : MonoBehaviour
                 elements.Clear();
             }
         }
-        else if( plants.Count == 2) 
+        else if( plants.Count == 2 ) 
         {
             Element newElement = craftingManager.getElement(plants[0].elementType, plants[1].elementType);
             if (newElement != null)

@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600dc0eb45ce74207ae322ed48c466ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 6937841571537140190}
   seedType: 0
   elementType: 13
   soilType: 1

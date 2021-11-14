@@ -513,7 +513,7 @@ MonoBehaviour:
   prefab: {fileID: 8844064295210624609}
   seedType: 0
   elementType: 5
-  soilType: 0
+  soilType: 2
   waterAmount: 0
 --- !u!1001 &8537985208138696771
 PrefabInstance:

@@ -963,7 +963,7 @@ MonoBehaviour:
   prefab: {fileID: 2896174386685647821}
   seedType: 0
   elementType: 5
-  soilType: 0
+  soilType: 1
   waterAmount: 0
 --- !u!1 &2951393330508483898
 GameObject:

@@ -1759,6 +1759,7 @@ GameObject:
   - component: {fileID: 2648106123362102082}
   - component: {fileID: 567969564}
   - component: {fileID: 567969563}
+  - component: {fileID: -1639485059180562627}
   m_Layer: 0
   m_Name: holyWater-model
   m_TagString: Untagged
@@ -1834,6 +1835,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06802445, y: 0.08878369, z: 0.03574818}
   m_Center: {x: 0.007572739, y: -0.008531439, z: 0.0075734593}
+--- !u!114 &-1639485059180562627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686388347826345281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4fd12a9a22e4c75b9fefc2dea25fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8686388347826345281}
+  elementType: 14
 --- !u!1 &8687722089101344349
 GameObject:
   m_ObjectHideFlags: 0

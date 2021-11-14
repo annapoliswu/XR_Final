@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4458037402365375155}
   - component: {fileID: 6154172485945527912}
   m_Layer: 0
-  m_Name: DroopyPlant 1
+  m_Name: LavaDroopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2881091818342949068}
   seedType: 0
-  elementType: 10
+  elementType: 3
   soilType: 0
   waterAmount: 0
 --- !u!114 &6320385133541044600

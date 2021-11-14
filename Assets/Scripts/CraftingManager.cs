@@ -9,7 +9,7 @@ public class CraftingManager : MonoBehaviour
     public Dictionary<HashSet<ElementType>, ElementType> elementDictionary = new Dictionary<HashSet<ElementType>, ElementType>
     {
         { new HashSet<ElementType> { ElementType.Fire, ElementType.Water }, ElementType.Air },
-        { new HashSet<ElementType> { ElementType.Earth, ElementType.Water }, ElementType.Wood},
+        { new HashSet<ElementType> { ElementType.Earth, ElementType.Water }, ElementType.Nature},
         { new HashSet<ElementType> { ElementType.Fire , ElementType.Earth }, ElementType.Lava},
         { new HashSet<ElementType> { ElementType.Air , ElementType.Water },ElementType.Ice },
         { new HashSet<ElementType> { ElementType.Fire, ElementType.Air }, ElementType.Lightening},
@@ -17,7 +17,7 @@ public class CraftingManager : MonoBehaviour
         { new HashSet<ElementType> { ElementType.Earth, ElementType.Gem }, ElementType.Metal},
         { new HashSet<ElementType> { ElementType.Metal, ElementType.Lightening}, ElementType.Death},
         { new HashSet<ElementType> { ElementType.Lightening,ElementType.Air }, ElementType.Light},
-        { new HashSet<ElementType> { ElementType.Gem, ElementType.Wood }, ElementType.Soul},
+        { new HashSet<ElementType> { ElementType.Gem, ElementType.Nature }, ElementType.Soul},
         { new HashSet<ElementType> { ElementType.Fire, ElementType.Death }, ElementType.Hellfire},
         { new HashSet<ElementType> { ElementType.Light, ElementType.Water }, ElementType.HolyWater},
         { new HashSet<ElementType> { ElementType.Earth, ElementType.Soul }, ElementType.MotherEarth}
