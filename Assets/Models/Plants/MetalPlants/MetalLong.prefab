@@ -430,7 +430,6 @@ GameObject:
   - component: {fileID: 2193307185289947741}
   - component: {fileID: 392038789061233545}
   - component: {fileID: 1749029883799127362}
-  - component: {fileID: 3373080726627098755}
   - component: {fileID: 3373080726627098756}
   m_Layer: 0
   m_Name: metalPlant (1)
@@ -536,19 +535,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 392038789061233544}
   elementType: 9
---- !u!65 &3373080726627098755
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392038789061233544}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.03, z: 0.03}
-  m_Center: {x: 0.0000000012417635, y: -0.00022017956, z: -0.0000000012417635}
 --- !u!114 &3373080726627098756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +563,6 @@ GameObject:
   - component: {fileID: 2193307186578348852}
   - component: {fileID: 392038789964364512}
   - component: {fileID: 1749029884526031915}
-  - component: {fileID: 3373080726186611462}
   - component: {fileID: 3373080726186611463}
   m_Layer: 0
   m_Name: metalPlant (3)
@@ -683,19 +668,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 392038789964364513}
   elementType: 9
---- !u!65 &3373080726186611462
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392038789964364513}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.03, z: 0.03}
-  m_Center: {x: 0.0000000012417635, y: -0.00022017956, z: -0.0000000012417635}
 --- !u!114 &3373080726186611463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,7 +696,6 @@ GameObject:
   - component: {fileID: 2193307185806759788}
   - component: {fileID: 392038790735951544}
   - component: {fileID: 1749029885431904371}
-  - component: {fileID: 3373080726795937665}
   - component: {fileID: 3373080726795937666}
   m_Layer: 0
   m_Name: metalPlant (2)
@@ -830,19 +801,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 392038790735951545}
   elementType: 9
---- !u!65 &3373080726795937665
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392038790735951545}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.03, z: 0.03}
-  m_Center: {x: 0.0000000012417635, y: -0.00022017956, z: -0.0000000012417635}
 --- !u!114 &3373080726795937666
 MonoBehaviour:
   m_ObjectHideFlags: 0

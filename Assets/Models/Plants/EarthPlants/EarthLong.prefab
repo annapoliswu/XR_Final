@@ -292,7 +292,6 @@ GameObject:
   - component: {fileID: 999706988148973416}
   - component: {fileID: 999706988148973412}
   - component: {fileID: 999706988148973415}
-  - component: {fileID: 999706988148973414}
   - component: {fileID: 999706988148973417}
   m_Layer: 0
   m_Name: earthFlower (3)
@@ -353,19 +352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 999706988148973419}
   elementType: 2
---- !u!135 &999706988148973414
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999706988148973419}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 7
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &999706988148973417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,7 +960,6 @@ GameObject:
   - component: {fileID: 999706989364201430}
   - component: {fileID: 999706989364201426}
   - component: {fileID: 999706989364201429}
-  - component: {fileID: 999706989364201428}
   - component: {fileID: 999706989364201431}
   m_Layer: 0
   m_Name: earthFlower (1)
@@ -1035,19 +1020,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 999706989364201433}
   elementType: 2
---- !u!135 &999706989364201428
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999706989364201433}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 7
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &999706989364201431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,7 +1413,6 @@ GameObject:
   - component: {fileID: 999706990196478867}
   - component: {fileID: 999706990196478895}
   - component: {fileID: 999706990196478894}
-  - component: {fileID: 999706990196478865}
   - component: {fileID: 999706990196478864}
   m_Layer: 0
   m_Name: earthFlower (2)
@@ -1502,19 +1473,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 999706990196478866}
   elementType: 2
---- !u!135 &999706990196478865
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999706990196478866}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 7
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &999706990196478864
 MonoBehaviour:
   m_ObjectHideFlags: 0

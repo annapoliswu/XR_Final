@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: 2182791800535077310}
   - component: {fileID: 5726690326734784597}
   - component: {fileID: 7739071854624809611}
-  - component: {fileID: 8397704231980080824}
   m_Layer: 0
   m_Name: skullFlower (1)
   m_TagString: Untagged
@@ -200,19 +199,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 381163177010327659}
   elementType: 11
---- !u!135 &8397704231980080824
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381163177010327659}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.02
-  m_Center: {x: -0.00019946136, y: -0.0009631401, z: -0.00043328703}
 --- !u!1 &711053831243436772
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +305,6 @@ GameObject:
   - component: {fileID: 3709911141742278148}
   - component: {fileID: 7084126574785196015}
   - component: {fileID: 5066586748707538225}
-  - component: {fileID: 6466103180416465154}
   m_Layer: 0
   m_Name: skullFlower (2)
   m_TagString: Untagged
@@ -424,19 +409,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2917414428500580305}
   elementType: 11
---- !u!135 &6466103180416465154
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2917414428500580305}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.02
-  m_Center: {x: -0.00019946136, y: -0.0009631401, z: -0.00043328703}
 --- !u!1 &3881256008022507872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1021,6 @@ GameObject:
   - component: {fileID: 8179518635444285486}
   - component: {fileID: 2355633077095377349}
   - component: {fileID: 337521029188272923}
-  - component: {fileID: 1964425745583898408}
   m_Layer: 0
   m_Name: skullFlower (3)
   m_TagString: Untagged
@@ -1154,16 +1125,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7675119668842435067}
   elementType: 11
---- !u!135 &1964425745583898408
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7675119668842435067}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.02
-  m_Center: {x: -0.00019946136, y: -0.0009631401, z: -0.00043328703}

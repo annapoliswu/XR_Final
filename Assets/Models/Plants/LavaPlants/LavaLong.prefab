@@ -5233,6 +5233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3298838667203372615}
   - component: {fileID: 2777600458943544572}
+  - component: {fileID: 5715465647538294816}
   m_Layer: 0
   m_Name: LavaPlant
   m_TagString: Untagged
@@ -5276,6 +5277,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5715465647538294816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2777600458943544573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4fd12a9a22e4c75b9fefc2dea25fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2777600458943544573}
+  elementType: 3
 --- !u!1 &2796416697397675134
 GameObject:
   m_ObjectHideFlags: 0
@@ -5450,6 +5465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2498476999017310089}
   - component: {fileID: 3019539560072314162}
+  - component: {fileID: 8710041134534135556}
   m_Layer: 0
   m_Name: LavaPlant
   m_TagString: Untagged
@@ -5493,6 +5509,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8710041134534135556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019539560072314163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4fd12a9a22e4c75b9fefc2dea25fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3019539560072314163}
+  elementType: 3
 --- !u!1 &3048212606731923485
 GameObject:
   m_ObjectHideFlags: 0
@@ -15279,6 +15309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3767454008650526885}
   - component: {fileID: 4540613420907244062}
+  - component: {fileID: 6785272358608112759}
   m_Layer: 0
   m_Name: LavaPlant
   m_TagString: Untagged
@@ -15322,6 +15353,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6785272358608112759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4540613420907244063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4fd12a9a22e4c75b9fefc2dea25fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4540613420907244063}
+  elementType: 3
 --- !u!1 &5428039862005014275
 GameObject:
   m_ObjectHideFlags: 0

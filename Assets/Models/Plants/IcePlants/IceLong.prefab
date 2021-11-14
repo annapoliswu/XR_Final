@@ -1870,7 +1870,6 @@ GameObject:
   - component: {fileID: 4751601762075047718}
   - component: {fileID: 4751601762075047721}
   - component: {fileID: 3768640633053014346}
-  - component: {fileID: 6325694976990676104}
   - component: {fileID: 3665451857192092785}
   m_Layer: 0
   m_Name: IceFlower (3)
@@ -1928,19 +1927,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4751601762075047720}
   elementType: 6
---- !u!135 &6325694976990676104
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4751601762075047720}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 194.38339
-  m_Center: {x: 0, y: 41.879898, z: -30.56824}
 --- !u!114 &3665451857192092785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1967,7 +1953,6 @@ GameObject:
   - component: {fileID: 4751601762892740608}
   - component: {fileID: 4751601762892740623}
   - component: {fileID: 3768640632780187244}
-  - component: {fileID: 6325694978866383790}
   - component: {fileID: 3665451857770359570}
   m_Layer: 0
   m_Name: IceFlower (2)
@@ -2025,19 +2010,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4751601762892740622}
   elementType: 6
---- !u!135 &6325694978866383790
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4751601762892740622}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 194.38339
-  m_Center: {x: 0, y: 41.879898, z: -30.56824}
 --- !u!114 &3665451857770359570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2064,7 +2036,6 @@ GameObject:
   - component: {fileID: 4751601763110040108}
   - component: {fileID: 4751601763110040099}
   - component: {fileID: 3768640631957302336}
-  - component: {fileID: 6325694978111684994}
   - component: {fileID: 3665451857291229702}
   m_Layer: 0
   m_Name: IceFlower (1)
@@ -2122,19 +2093,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4751601763110040098}
   elementType: 6
---- !u!135 &6325694978111684994
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4751601763110040098}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 194.38339
-  m_Center: {x: 0, y: 41.879898, z: -30.56824}
 --- !u!114 &3665451857291229702
 MonoBehaviour:
   m_ObjectHideFlags: 0
