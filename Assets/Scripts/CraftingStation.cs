@@ -156,6 +156,10 @@ public class CraftingStation : MonoBehaviour
                 Destroy(elements[1].gameObject);
                 elements.Clear();
             }
+            else
+            {
+                print("no such combo, don't do anything");
+            }
         }
         else if( plants.Count == 2 ) 
         {

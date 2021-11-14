@@ -6,22 +6,25 @@ public class CraftingManager : MonoBehaviour
 {
     public List<Plant> plants;
     public List<Element> elements;
-    public Dictionary<HashSet<ElementType>, ElementType> elementDictionary = new Dictionary<HashSet<ElementType>, ElementType>
+    public Dictionary<HashSet<ElementType>, ElementType> elementDictionary = new Dictionary<HashSet<ElementType>, ElementType>(HashSet<ElementType>.CreateSetComparer());
+
+    public void Awake()
     {
-        { new HashSet<ElementType> { ElementType.Fire, ElementType.Water }, ElementType.Air },
-        { new HashSet<ElementType> { ElementType.Earth, ElementType.Water }, ElementType.Nature},
-        { new HashSet<ElementType> { ElementType.Fire , ElementType.Earth }, ElementType.Lava},
-        { new HashSet<ElementType> { ElementType.Air , ElementType.Water },ElementType.Ice },
-        { new HashSet<ElementType> { ElementType.Fire, ElementType.Air }, ElementType.Lightening},
-        { new HashSet<ElementType> { ElementType.Lava, ElementType.Air }, ElementType.Gem},
-        { new HashSet<ElementType> { ElementType.Earth, ElementType.Gem }, ElementType.Metal},
-        { new HashSet<ElementType> { ElementType.Metal, ElementType.Lightening}, ElementType.Death},
-        { new HashSet<ElementType> { ElementType.Lightening,ElementType.Air }, ElementType.Light},
-        { new HashSet<ElementType> { ElementType.Gem, ElementType.Nature }, ElementType.Soul},
-        { new HashSet<ElementType> { ElementType.Fire, ElementType.Death }, ElementType.Hellfire},
-        { new HashSet<ElementType> { ElementType.Light, ElementType.Water }, ElementType.HolyWater},
-        { new HashSet<ElementType> { ElementType.Earth, ElementType.Soul }, ElementType.MotherEarth}
-    };
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Fire, ElementType.Water }, ElementType.Air);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Earth, ElementType.Water }, ElementType.Nature);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Fire, ElementType.Earth }, ElementType.Lava);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Air, ElementType.Water },ElementType.Ice);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Fire, ElementType.Air }, ElementType.Lightening);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Lava, ElementType.Air }, ElementType.Gem);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Earth, ElementType.Gem }, ElementType.Metal);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Metal, ElementType.Lightening }, ElementType.Death);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Lightening, ElementType.Air }, ElementType.Light);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Gem, ElementType.Nature }, ElementType.Soul);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Fire, ElementType.Death }, ElementType.Hellfire);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Light, ElementType.Water }, ElementType.HolyWater);
+            elementDictionary.Add(new HashSet<ElementType> { ElementType.Earth, ElementType.Soul }, ElementType.MotherEarth);
+    }
+
 
     public Plant getPlant(Seed seed, Soil soil, Element element)
     {
@@ -47,6 +50,7 @@ public class CraftingManager : MonoBehaviour
     public Element getElement(ElementType elementOne, ElementType elementTwo)
     {
         HashSet<ElementType> elementHash = new HashSet<ElementType> { elementOne, elementTwo };
+
         ElementType newElementType;
         if (elementDictionary.TryGetValue(elementHash, out newElementType))
         {
@@ -54,7 +58,7 @@ public class CraftingManager : MonoBehaviour
         }
         else
         {
-            newElementType = elementOne;
+            return null;
         }
 
         foreach (Element element in elements)
