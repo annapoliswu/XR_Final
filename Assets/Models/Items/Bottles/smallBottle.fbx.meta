@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c7ccb39aac6f043cf986f33f3a671a12
+guid: 5713d82ca4d954deeba9a09d7db6a36b
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
@@ -10,8 +10,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BGuzman_CustomRoom_Skull_S
-    second: {fileID: 2100000, guid: 9aad8493ba39146b3bba9d6f434fc688, type: 2}
+      name: blueGlassMat
+    second: {fileID: 2100000, guid: d4b8a16ca8090404ba8c7ce237963c82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potionBottleTop
+    second: {fileID: 2100000, guid: 222cfe20d772c429d9be18b94a55cf90, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
