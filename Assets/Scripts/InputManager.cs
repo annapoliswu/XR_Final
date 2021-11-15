@@ -18,15 +18,13 @@ public class InputManager : MonoBehaviour
     public static UnityAction onLeftTriggerDown = null;
     public static UnityAction onRightTriggerDown = null;
 
-    public GameObject button;
+    public UnityEngine.UI.Button button;
     public CraftingStation craftingStation;
 
     private void Awake()
     {
         InputManager.onLeftTriggerDown += LeftTriggerDown;
         InputManager.onRightTriggerDown += RightTriggerDown;
-
-        button = craftingStation.button;
 
     }
     private void OnDestroy()
@@ -80,24 +78,26 @@ public class InputManager : MonoBehaviour
         }
 
 
+
+
         Ray rightRay = new Ray(rightAnchor.position, rightAnchor.forward); // cast a ray from the controller out towards where it is pointing
         RaycastHit rightHit;                                     
 
         if (Physics.Raycast(rightRay, out rightHit, MAX_DISTANCE))
         {
-            if (rightHit.collider.gameObject == button )
+            if (rightHit.collider.gameObject.tag == "PlantButton" )
             {
-                //set button color to smth
+                ButtonSelected();
             }
             else
             {
-               //unset button color
+                ButtonDeselected();
             }
 
         }
         else
         {
-            //unset button color
+            ButtonDeselected();
         }
 
         // check for user input: primary trigger 
@@ -107,7 +107,10 @@ public class InputManager : MonoBehaviour
                 onRightTriggerDown();
         }
 
+
     }
+
+
 
     // function called when user pulls trigger
     private void LeftTriggerDown()
@@ -142,11 +145,25 @@ public class InputManager : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, MAX_DISTANCE))
         {
-            if (hit.collider.gameObject.tag == "GroundSurf")
+            if (hit.collider.gameObject.tag == "PlantButton")
             {
-                //set button clicked
+                craftingStation.PressButton();
             }
 
         }
+    }
+
+    private void ButtonSelected()
+    {
+        var colors = button.colors;
+        colors.normalColor = Color.green;
+        button.colors = colors;
+    }
+
+    private void ButtonDeselected()
+    {
+        var colors = button.colors;
+        colors.normalColor = Color.white;
+        button.colors = colors;
     }
 }

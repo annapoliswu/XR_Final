@@ -30,6 +30,11 @@ public class CraftingStation : MonoBehaviour
     public float itemDropHeight = .5f;
     public ParticleSystem sizzle;
 
+    private void Awake()
+    {
+        SetHint();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +44,7 @@ public class CraftingStation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        onButtonPressed();
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -75,7 +80,7 @@ public class CraftingStation : MonoBehaviour
         }
 
         // other.gameObject.GetComponent<OVRGrabbable>().isGrabbed() = false;
-
+        SetHint();
     }
 
 
@@ -106,12 +111,59 @@ public class CraftingStation : MonoBehaviour
             plants.Remove(tempPlant);
             print("removed plant");
         }
+
+        SetHint();
     }
 
+    //eh, for giving hint / set color of crafting station if there is a valid recipe
+    private bool IsValidRecipe()
+    {
+        if (seed != null && soil != null && (elements.Count == 1 && elements[0] != null))
+        {
+            Plant plant = craftingManager.getPlant(seed, soil, elements[0]);
+            if (plant != null) //plant recipe exists
+            {
+                return true;
+            }
+            else if (elements.Count == 2 && plants.Count == 0)
+            {
+                Element newElement = craftingManager.getElement(elements[0], elements[1]);
+                if (newElement != null)
+                {
+                    return true;
+                }
+            }
+            else if (plants.Count == 2)
+            {
+                Element newElement = craftingManager.getElement(plants[0].elementType, plants[1].elementType);
+                if (newElement != null)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private void SetHint()
+    {
+        if (IsValidRecipe())
+        {
+            Color color = Color.green;
+            color.a = .25f;
+            this.GetComponent<Renderer>().material.color = color;
+        }
+        else
+        {
+            Color color = new Color(.33f, .7f, 1f);
+            color.a = .25f;
+            this.GetComponent<Renderer>().material.color = color;
+        }
+    }
 
     //check if recipe exists for materials. if true, consume and make instance of plant
     //water amount will always be input
-    private bool onButtonPressed()
+    public bool PressButton()
     {
 
 

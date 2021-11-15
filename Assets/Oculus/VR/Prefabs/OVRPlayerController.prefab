@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 11400020}
   - component: {fileID: 11400002}
   - component: {fileID: 114814064252544740}
-  - component: {fileID: 638651120}
   m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Untagged
@@ -127,22 +126,6 @@ MonoBehaviour:
   resetHmdPoseByMiddleMouseButton: 1
   activateKeys: 3201000031010000
   pitchKeys: 3401000033010000
---- !u!114 &638651120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8e7ff1cdf4c4e74db00c3684108bc9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EventMask:
-    serializedVersion: 2
-    m_Bits: 2147483647
-  sortOrder: 0
 --- !u!1 &100006
 GameObject:
   m_ObjectHideFlags: 0
