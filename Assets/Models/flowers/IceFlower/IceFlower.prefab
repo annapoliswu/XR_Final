@@ -541,8 +541,8 @@ GameObject:
   - component: {fileID: 8299951232516398637}
   - component: {fileID: 7225806391796943254}
   - component: {fileID: 473629731256041550}
-  - component: {fileID: 7284342712766983564}
   - component: {fileID: 974825995952897321}
+  - component: {fileID: 8520132434243387822}
   m_Layer: 0
   m_Name: IceFlower
   m_TagString: Untagged
@@ -616,20 +616,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8299951232516398636}
   elementType: 6
-  name: ice
---- !u!135 &7284342712766983564
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8299951232516398636}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 194.38339
-  m_Center: {x: 0, y: 41.879898, z: -30.56824}
 --- !u!54 &974825995952897321
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -646,6 +632,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8520132434243387822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8299951232516398636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 290.64786, y: 213.9045, z: 283.44656}
+  m_Center: {x: 10.119384, y: 35.628567, z: -35.241962}
 --- !u!1 &8942682199399152004
 GameObject:
   m_ObjectHideFlags: 0

@@ -176,8 +176,8 @@ GameObject:
   - component: {fileID: 7851477593004567347}
   - component: {fileID: 5399874589260318731}
   - component: {fileID: 4158738354296766325}
-  - component: {fileID: 4316980804082915136}
   - component: {fileID: 1155383232234060444}
+  - component: {fileID: 8928044217003380453}
   m_Layer: 0
   m_Name: SoulPlant
   m_TagString: Untagged
@@ -234,7 +234,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6527554786717309951}
   elementType: 10
-  name: soul
 --- !u!114 &4158738354296766325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,19 +251,6 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
---- !u!135 &4316980804082915136
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6527554786717309951}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.07
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1155383232234060444
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -281,3 +267,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8928044217003380453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6527554786717309951}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12, y: 0.12, z: 0.12}
+  m_Center: {x: 0, y: 0, z: 0}

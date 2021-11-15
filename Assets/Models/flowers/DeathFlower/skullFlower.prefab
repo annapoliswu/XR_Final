@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3561701391486089514}
   - component: {fileID: 7165440257844291040}
   - component: {fileID: 1545379881739162612}
-  - component: {fileID: 765151826332626887}
   - component: {fileID: 4152068004579102314}
+  - component: {fileID: 8355641756497275018}
   m_Layer: 0
   m_Name: skullFlower
   m_TagString: Untagged
@@ -137,20 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8889780116294680852}
   elementType: 11
-  name: death
---- !u!135 &765151826332626887
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8889780116294680852}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.02
-  m_Center: {x: -0.00019946136, y: -0.0009631401, z: -0.00043328703}
 --- !u!54 &4152068004579102314
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -167,3 +153,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8355641756497275018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8889780116294680852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029587993, y: 0.032714732, z: 0.03151836}
+  m_Center: {x: -0.00019958054, y: -0.0009631403, z: -0.00043327222}

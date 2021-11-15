@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3264909464458371375}
   - component: {fileID: 3264909464458371372}
   - component: {fileID: 3264909464458371373}
-  - component: {fileID: 3264909464458371374}
   m_Layer: 0
   m_Name: innerFire
   m_TagString: Untagged
@@ -83,19 +82,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3264909464458371374
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3264909464458371360}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3264909464745703270
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +93,6 @@ GameObject:
   - component: {fileID: 3264909464745703269}
   - component: {fileID: 3264909464745703266}
   - component: {fileID: 3264909464745703267}
-  - component: {fileID: 3264909464745703268}
   m_Layer: 0
   m_Name: base
   m_TagString: Untagged
@@ -179,19 +164,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3264909464745703268
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3264909464745703270}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3264909464899675062
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +175,6 @@ GameObject:
   - component: {fileID: 3264909464899675061}
   - component: {fileID: 3264909464899675058}
   - component: {fileID: 3264909464899675059}
-  - component: {fileID: 3264909464899675060}
   m_Layer: 0
   m_Name: outerFire
   m_TagString: Untagged
@@ -275,19 +246,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3264909464899675060
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3264909464899675062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3264909465614823465
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +258,8 @@ GameObject:
   - component: {fileID: 5019216904976882265}
   - component: {fileID: 7762044411143214866}
   - component: {fileID: 9143983263208742386}
-  - component: {fileID: 11038744283577200}
   - component: {fileID: 5205871592204538482}
+  - component: {fileID: 7476996492899652942}
   m_Layer: 0
   m_Name: FireFlower
   m_TagString: Untagged
@@ -378,20 +336,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 3264909465614823465}
   elementType: 0
-  name: fire
---- !u!135 &11038744283577200
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3264909465614823465}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.8
-  m_Center: {x: 0, y: 0, z: 0.75}
 --- !u!54 &5205871592204538482
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -408,6 +352,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7476996492899652942
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264909465614823465}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3597769, y: 1.173871, z: 1.3335276}
+  m_Center: {x: 0.057596862, y: 0.0869355, z: 0.7619548}
 --- !u!1 &4349338499771972640
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,7 +376,6 @@ GameObject:
   - component: {fileID: 8989656751204237762}
   - component: {fileID: 3150135503948166931}
   - component: {fileID: 6836989196352704393}
-  - component: {fileID: 9133489868297578421}
   m_Layer: 0
   m_Name: outerFire (1)
   m_TagString: Untagged
@@ -491,19 +447,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &9133489868297578421
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4349338499771972640}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8665333241968624107
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +458,6 @@ GameObject:
   - component: {fileID: 2061723804666500045}
   - component: {fileID: 6750705418439052605}
   - component: {fileID: 2025017567743937535}
-  - component: {fileID: 5099770554331672953}
   m_Layer: 0
   m_Name: innerFire (1)
   m_TagString: Untagged
@@ -587,16 +529,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5099770554331672953
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8665333241968624107}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}

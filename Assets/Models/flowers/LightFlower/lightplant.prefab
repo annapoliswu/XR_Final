@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 1619819916835891710}
   - component: {fileID: 2348705370441734299}
   - component: {fileID: 6473234472055775667}
-  - component: {fileID: 2939468298818010283}
   - component: {fileID: 5229904563472667953}
+  - component: {fileID: 2363442178846645040}
   m_Layer: 0
   m_Name: lightplant
   m_TagString: Untagged
@@ -170,20 +170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1926318464905821915}
   elementType: 12
-  name: light
---- !u!135 &2939468298818010283
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926318464905821915}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.075
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5229904563472667953
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -200,6 +186,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &2363442178846645040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926318464905821915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14, y: 0.10411458, z: 0.14}
+  m_Center: {x: 0, y: 0.0020572916, z: 0}
 --- !u!1 &3861231515914125655
 GameObject:
   m_ObjectHideFlags: 0

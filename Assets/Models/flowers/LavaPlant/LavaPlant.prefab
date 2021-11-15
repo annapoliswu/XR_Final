@@ -71,7 +71,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 229705193615780373}
   elementType: 3
-  name: lava
 --- !u!114 &4581537801124993960
 MonoBehaviour:
   m_ObjectHideFlags: 0

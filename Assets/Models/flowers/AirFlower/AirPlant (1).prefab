@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5362332589800111787}
   - component: {fileID: 4376622793524681709}
   - component: {fileID: 6493321113939733466}
-  - component: {fileID: 2653021557162831540}
   - component: {fileID: 5631142924405043857}
+  - component: {fileID: 476403485994542211}
   m_Layer: 0
   m_Name: AirPlant (1)
   m_TagString: Untagged
@@ -88,20 +88,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 5362332589800111786}
   elementType: 4
-  name: air
---- !u!135 &2653021557162831540
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5362332589800111786}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.7
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5631142924405043857
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -118,6 +104,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &476403485994542211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5362332589800111786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1, z: 1.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5924510942320351022
 GameObject:
   m_ObjectHideFlags: 0
