@@ -64,7 +64,7 @@ public class InputManager : MonoBehaviour
         }
 
         // check for user input: primary trigger 
-        if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger, OVRInput.Controller.Touch))
+        if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger, OVRInput.Controller.Touch))
         {
             if (onTriggerDown != null)
                 onTriggerDown();
