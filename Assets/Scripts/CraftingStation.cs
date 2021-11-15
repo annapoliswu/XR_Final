@@ -193,6 +193,7 @@ public class CraftingStation : MonoBehaviour
                 soil = null;
                 elements.Clear();
 
+                sizzle.Play();
                 outputItem(plant.prefab);
             }
         }
@@ -201,11 +202,12 @@ public class CraftingStation : MonoBehaviour
             Element newElement = craftingManager.getElement(elements[0], elements[1]);
             if (newElement != null)
             {
-                outputItem(newElement.prefab);
-
                 Destroy(elements[0].gameObject);
                 Destroy(elements[1].gameObject);
                 elements.Clear();
+
+                sizzle.Play();
+                outputItem(newElement.prefab);
             }
             else
             {
@@ -217,6 +219,7 @@ public class CraftingStation : MonoBehaviour
             Element newElement = craftingManager.getElement(plants[0].elementType, plants[1].elementType);
             if (newElement != null)
             {
+                sizzle.Play();
                 outputItem(newElement.prefab);
             }
         }
@@ -231,7 +234,6 @@ public class CraftingStation : MonoBehaviour
 
     private void outputItem(GameObject prefab)
     {
-        sizzle.Play();
         GameObject obj = Instantiate(prefab, new Vector3(this.transform.position.x, this.transform.position.y + itemDropHeight, this.transform.position.z), Quaternion.identity);
     }
 
