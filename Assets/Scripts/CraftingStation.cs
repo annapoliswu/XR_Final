@@ -44,7 +44,6 @@ public class CraftingStation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -163,7 +162,7 @@ public class CraftingStation : MonoBehaviour
 
     //check if recipe exists for materials. if true, consume and make instance of plant
     //water amount will always be input
-    public bool PressButton()
+    public bool PressButton() 
     {
 
 

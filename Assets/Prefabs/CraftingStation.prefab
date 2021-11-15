@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5386104141481308703}
   - component: {fileID: 5386104141481308702}
   - component: {fileID: 5386104141481308705}
-  - component: {fileID: 5386104141481308704}
+  - component: {fileID: 2100361614194578745}
   m_Layer: 0
   m_Name: CraftingStation
   m_TagString: Untagged
@@ -99,7 +99,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5386104141481308704
+--- !u!114 &2100361614194578745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   seedLocation: {fileID: 0}
   craftingManager: {fileID: 0}
   itemDropHeight: 0.5
-  sizzle: {fileID: 5386104142009903888}
+  sizzle: {fileID: 0}
 --- !u!1 &5386104141623444136
 GameObject:
   m_ObjectHideFlags: 0
