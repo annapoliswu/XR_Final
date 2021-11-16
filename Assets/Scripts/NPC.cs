@@ -13,7 +13,7 @@ public class NPC : MonoBehaviour
     public GameObject codex;
 
     private static string[] helloResponses = new string[] { "Hello, welcome to my greenhouse", "Welcome, happy crafting", "Careful traveller, element breeding is a dangerous pursuit" };
-    private static string[] hintResponses = new string[] { "Try and combine elements with different soil types and a seed", "Try and breed two plants or elements together to generate a new element", "Not all combinations work of elements work, think carefully", "Try to create the three top tier plants: Mother Earth, Hell Fire, and Holy Water", "With just fire, water, and earth, you can create air, nature, and lava elements" };
+    private static string[] hintResponses = new string[] { "Try and combine elements with different soil types and a seed", "Try and breed two elements together to generate a new element", "Not all combinations of elements work, think carefully", "Try to create the three final tier plants: Mother Earth, Hell Fire, and Holy Water", "With just fire, water, and earth, you can create air, nature, and lava elements" };
     Dictionary<string, string[]> responses = new Dictionary<string, string[]>(){
         {"Say hello", helloResponses},
         {"Ask for a hint", hintResponses} 
