@@ -10017,25 +10017,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 8300000, guid: 0539f5416c3a74bbab962e15457b5506, type: 3}
-    volume: 0
-    pitch: 0
-    source: {fileID: 0}
-  - name: 
+  - name: BackgroundMusic
     clip: {fileID: 8300000, guid: 7b64a67ba94744f029661c4185e8d91e, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
-  - name: 
+  - name: BackgroundMusic2
+    clip: {fileID: 8300000, guid: 0539f5416c3a74bbab962e15457b5506, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Magic
     clip: {fileID: 8300000, guid: a94f1f3881d7c45ed8b01542396fba7e, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.8
+    pitch: 1
     source: {fileID: 0}
-  - name: 
+  - name: Magic2
     clip: {fileID: 8300000, guid: 6102f58a1103942ef939a6f5e2d206f8, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 0.8
+    pitch: 1
     source: {fileID: 0}
 --- !u!4 &1441126410
 Transform:
@@ -13257,14 +13257,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
   m_PrefabInstance: {fileID: 1883253746}
   m_PrefabAsset: {fileID: 0}
---- !u!81 &1883253752
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883253751}
-  m_Enabled: 1
 --- !u!114 &1883253754 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
