@@ -10489,7 +10489,7 @@ Transform:
   m_Children:
   - {fileID: 1516080473}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1371554077
 PrefabInstance:
@@ -17564,6 +17564,11 @@ PrefabInstance:
     - target: {fileID: 5386104141481308707, guid: 5d3a0ffc332a64a17b45731cbcc188c7, type: 3}
       propertyPath: m_Name
       value: CraftingStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386104141714917636, guid: 5d3a0ffc332a64a17b45731cbcc188c7, type: 3}
+      propertyPath: m_text
+      value: 'Drag and drop into the magical plant center and right click plant to
+        create plants! '
       objectReference: {fileID: 0}
     - target: {fileID: 5386104142009903888, guid: 5d3a0ffc332a64a17b45731cbcc188c7, type: 3}
       propertyPath: InitialModule.startSize.scalar
