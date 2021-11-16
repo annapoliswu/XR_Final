@@ -17567,8 +17567,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5386104141714917636, guid: 5d3a0ffc332a64a17b45731cbcc188c7, type: 3}
       propertyPath: m_text
-      value: 'Drag and drop into the magical plant center and right click plant to
-        create plants! '
+      value: 'Drag and drop into the magical center and right click plant to create
+        plants! '
       objectReference: {fileID: 0}
     - target: {fileID: 5386104142009903888, guid: 5d3a0ffc332a64a17b45731cbcc188c7, type: 3}
       propertyPath: InitialModule.startSize.scalar
