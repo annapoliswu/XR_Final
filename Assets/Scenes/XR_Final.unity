@@ -1310,7 +1310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 184.085, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00069, y: 0.03752}
+  m_AnchoredPosition: {x: 0.00069, y: 0.0435}
   m_SizeDelta: {x: 35, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &187725760
@@ -10681,7 +10681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.00069, y: 0.03511}
+  m_AnchoredPosition: {x: 0.00069, y: 0.04109}
   m_SizeDelta: {x: 2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394589660
@@ -14834,8 +14834,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.03251759
-  m_Center: {x: 0.00015473552, y: 0.048912797, z: -0.008349722}
+  m_Radius: 0.046146225
+  m_Center: {x: 0.00015473552, y: 0.048912797, z: 0.0034599365}
 --- !u!114 &1883142163
 MonoBehaviour:
   m_ObjectHideFlags: 0
