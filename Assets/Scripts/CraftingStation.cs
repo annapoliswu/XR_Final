@@ -81,7 +81,6 @@ public class CraftingStation : MonoBehaviour
             print("got plant");
         }
 
-        // other.gameObject.GetComponent<OVRGrabbable>().isGrabbed() = false;
         SetHint();
     }
 
@@ -127,23 +126,24 @@ public class CraftingStation : MonoBehaviour
             {
                 return true;
             }
-            else if (elements.Count == 2 && plants.Count == 0)
+        }
+        else if (elements.Count == 2 && plants.Count == 0)
+        {
+            Element newElement = craftingManager.getElement(elements[0], elements[1]);
+            if (newElement != null)
             {
-                Element newElement = craftingManager.getElement(elements[0], elements[1]);
-                if (newElement != null)
-                {
-                    return true;
-                }
-            }
-            else if (plants.Count == 2)
-            {
-                Element newElement = craftingManager.getElement(plants[0].elementType, plants[1].elementType);
-                if (newElement != null)
-                {
-                    return true;
-                }
+                return true;
             }
         }
+        else if (plants.Count == 2)
+        {
+            Element newElement = craftingManager.getElement(plants[0].elementType, plants[1].elementType);
+            if (newElement != null)
+            {
+                return true;
+            }
+        }
+        
         return false;
     }
 
