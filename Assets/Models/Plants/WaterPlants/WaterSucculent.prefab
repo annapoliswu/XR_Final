@@ -3638,7 +3638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: waterFlower-model 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2451703900166247963, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
+    - {fileID: 1717058665928258804, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
+    - {fileID: 2324149844127293126, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
 --- !u!224 &1910695965428157467 stripped
 RectTransform:
