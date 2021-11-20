@@ -310,6 +310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -28.33899
       objectReference: {fileID: 0}
+    - target: {fileID: 7996650759462385845, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8441460031465638589, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
       propertyPath: m_Name
       value: waterFlower-model (6)
@@ -482,6 +486,10 @@ PrefabInstance:
     - target: {fileID: 4003713242779183053, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -17.351013
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996650759462385845, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8441460031465638589, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
       propertyPath: m_Name
@@ -656,6 +664,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -25.77301
       objectReference: {fileID: 0}
+    - target: {fileID: 7996650759462385845, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8441460031465638589, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
       propertyPath: m_Name
       value: waterFlower-model (4)
@@ -828,6 +840,10 @@ PrefabInstance:
     - target: {fileID: 4003713242779183053, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -28.955017
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996650759462385845, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8441460031465638589, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
       propertyPath: m_Name
@@ -1059,6 +1075,10 @@ PrefabInstance:
     - target: {fileID: 4003713242779183053, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -21.062988
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996650759462385845, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8441460031465638589, guid: 0d193c57c83de4cdcb9bf514b342f69d, type: 3}
       propertyPath: m_Name

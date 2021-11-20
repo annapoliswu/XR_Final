@@ -227,6 +227,10 @@ PrefabInstance:
       value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5023603012122956277, guid: bb84c7b387ab04028a749f1fab1337bf, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023603012122956277, guid: bb84c7b387ab04028a749f1fab1337bf, type: 3}
       propertyPath: RotationModule.x.minMaxState
       value: 3
       objectReference: {fileID: 0}
