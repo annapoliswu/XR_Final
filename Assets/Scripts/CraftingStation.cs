@@ -61,7 +61,7 @@ public class CraftingStation : MonoBehaviour
         {
             elements.Add(tempElement);
             print("got element");
-            tempElement.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+            // tempElement.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
         }
         else if (tempSoil != null && soil == null)
         {
