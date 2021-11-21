@@ -9,6 +9,7 @@ public class CraftingStation : MonoBehaviour
     public Canvas canvas;
     public TextMeshProUGUI text;
     public GameObject button;
+    public GameObject colorMaterial;
 
     [Header("Crafting Materials")]
     public Seed seed;
@@ -153,13 +154,13 @@ public class CraftingStation : MonoBehaviour
         {
             Color color = Color.green;
             color.a = .25f;
-            this.GetComponent<Renderer>().material.color = color;
+            colorMaterial.GetComponent<Renderer>().material.color = color;
         }
         else
         {
             Color color = new Color(.33f, .7f, 1f);
             color.a = .25f;
-            this.GetComponent<Renderer>().material.color = color;
+            colorMaterial.GetComponent<Renderer>().material.color = color;
         }
     }
 
